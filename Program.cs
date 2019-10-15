@@ -10,16 +10,18 @@ namespace NumbersToWordsConverter
     {
         static void Main(string[] args)
         {
+            // Arrays
             string[] digitAsChars = new string[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" };
             string[] digitAsStrings = new string[] { "Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine" };
             string[] numbersAsStrings_per10 = new string[] { "Ten", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety" };
             string[] numbersAsStrings_11To19 = new string[] { "Eleven", "Twelve", "Thirteen", "Forteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen" };
             string[] numsAsStrings_beyond99 = new string[] { "Hundred", "Thousand", "Million", "Billion" };
 
+            // Global variables
             string inputNumber = string.Empty;
             bool inputIsValid = false;
 
-            // Check if the input is comboOne(s) or character(s)
+            // Check the input whether it is a valid integer within a range or character(s)
             while (inputIsValid == false)
             {
                 Console.Write("Convert this Number: ");
